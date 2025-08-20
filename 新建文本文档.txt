@@ -1,0 +1,61 @@
+Guoke@1234
+Guoke123456
+#!/bin/bash
+
+read -p "请输入本机IP后缀(endfix): " endfix
+
+echo "从主节点下载sim_qkd_0620.zip..."
+scp GKLZ@10.168.4.170:/home/GKLZ/sim_qkd_0620.zip ./
+
+unzip sim_qkd_0620.zip
+rm -rf sim_qkd_0620.zip
+mv 0620 sim_qkd_${endfix}
+cp -r sim_qkd_${endfix}/ sim_qkd_170
+
+sed -i \
+  -e "s/QkrServiceIp:.*/QkrServiceIp: 192.168.81.$((endfix+40))/" \
+  -e "s/QkrAdminIp:.*/QkrAdminIp: 192.168.81.$((endfix+40))/" \
+  -e "s/PeerSimQKDIp:.*/PeerSimQKDIp: 192.168.81.$((endfix+40))/" \
+  -e "s/^PeerSimQKDPort:.*/PeerSimQKDPort: 9998/" \
+  -e "s/Vqi:.*/Vqi: ${endfix}/" \
+  -e "s/DevId:.*/DevId: ${endfix}170/" \
+  -e "s/PeerId:.*/PeerId: 170${endfix}/" \
+  "sim_qkd_${endfix}/etc/sim_qkd.yaml"
+
+sed -i \
+  -e "s/QkrServiceIp:.*/QkrServiceIp: 192.168.81.210/" \
+  -e "s/QkrAdminIp:.*/QkrAdminIp: 192.168.81.210/" \
+  -e "s/PeerSimQKDIp:.*/PeerSimQKDIp: 192.168.81.$((endfix+40))/" \
+  -e "s/Vqi:.*/Vqi: ${endfix}/" \
+  -e "s/DevId:.*/DevId: 170${endfix}/" \
+  -e "s/PeerId:.*/PeerId: ${endfix}170/" \
+  -e "s/^Port:.*/Port: 9998/" \
+  "sim_qkd_170/etc/sim_qkd.yaml"
+
+echo "done!"
+
+
+
+
+Guoke@1234
+#!/bin/bash
+
+read -p "请输入本机IP后缀(endfix): " endfix
+
+echo "从主节点下载sim_km.zip..."
+scp GKLZ@10.168.4.170:/home/GKLZ/sim_km.zip ./
+
+unzip sim_km.zip
+rm -rf sim_km.zip
+
+sed -i \
+  -e "s/^port = 10.168.4.213:77/port = 192.168.$((endfix-40)).201:$((endfix+7000)),192.168.$((endfix-40)).201:7170/" \
+  "sim_km/conf/config.ini"
+
+
+chmod 755 ./sim_km/sim_km
+cd sim_km
+./sim_km &
+
+echo "done!"
+
