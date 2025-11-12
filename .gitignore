@@ -1,0 +1,5 @@
+mserAgent
+*.crt
+/createdFile/*
+test
+.vscode
