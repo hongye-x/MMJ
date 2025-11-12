@@ -1,1 +1,0 @@
-/usr/bin/cc   -rdynamic CMakeFiles/nist_sts_test.dir/main.o  -o nist_sts_test  -lnist_sts -lcrypto 

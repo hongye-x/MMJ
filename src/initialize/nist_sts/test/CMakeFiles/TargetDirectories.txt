@@ -1,3 +1,0 @@
-/root/xingl/nmmj/Src/init/RandomnessTest/nist_sts-master/test/CMakeFiles/rebuild_cache.dir
-/root/xingl/nmmj/Src/init/RandomnessTest/nist_sts-master/test/CMakeFiles/nist_sts_test.dir
-/root/xingl/nmmj/Src/init/RandomnessTest/nist_sts-master/test/CMakeFiles/edit_cache.dir

@@ -1,5 +1,9 @@
-mserAgent
+# generated file
+bin/mserAgent
+bin/kek*
+bin/random_data.bin
+
 *.crt
 /createdFile/*
 test
-.vscode
+.vscode/*
