@@ -1,9 +1,10 @@
 # generated file
 bin/mserAgent
 bin/kek*
-bin/random_data.bin
+# bin/random_data.bin
 
 *.crt
-/createdFile/*
+# /createdFile/*
 test
 .vscode/*
+package*
