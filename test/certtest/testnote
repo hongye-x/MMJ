@@ -1,0 +1,52 @@
+GmSSL 3.1.2 Dev
+
+1.生成CA SM2 私钥
+gmssl sm2keygen -out ca.key -pass ""
+
+2.生成自签名 CA 证书
+gmssl certgen \
+  -C CN -ST Beijing -L Haidian -O "My Organization" -OU "CA Dept" -CN "My Root CA" \
+  -serial_len 16 -days 3650 \
+  -key ca.key -pass "" \
+  -sm2_id "1234567812345678" \
+  -ca -path_len_constraint 6 \
+  -key_usage keyCertSign -key_usage cRLSign \
+  -gen_authority_key_id -gen_subject_key_id \
+  -crl_http_uri http://example.com/ca.crl \
+  -out ca.crt
+
+3.生成用户加密密钥
+gmssl sm2keygen -out user_enc.key -pass ""
+
+4.生成csr
+gmssl reqgen \
+  -C CN -ST Shanghai -L Pudong -O "MyOrg" -OU "Dev" -CN "server.example.com" \
+  -key user_enc.key -pass "" \
+  -sm2_id "1234567812345678" \
+  -out user_enc.csr
+
+5.签发证书
+gmssl reqsign -in user_enc.csr -req_sm2_id "1234567812345678" -serial_len 16 -days 365 -cacert ca.crt -key ca.key -pass "" -sm2_id "1234567812345678" -key_usage digitalSignature -ext_key_usage serverAuth -subject_dns_name "www.example.com" -subject_dns_name "example.com" -gen_subject_key_id -out user_enc.crt -crl_http_uri "http://0.0.0.0:8000/current.crl" -ocsp_uri "http://ocsp.example.com"
+
+6.生成吊销记录
+gmssl certrevoke \
+  -in user_enc.crt \
+  -reason keyCompromise \
+  -invalid_date $(date -u +"%Y%m%d%H%M%SZ") \
+  -out revoked_cert.der
+
+8.生成CRL
+gmssl crlgen \
+  -in revoked_cert.der \
+  -cacert ca.crt \
+  -key ca.key \
+  -pass "" \
+  -next_update $(date -u -d "+7 days" +"%Y%m%d%H%M%SZ") \
+  -gen_authority_key_id \
+  -crl_num $(date +%s) \
+  -out current.crl
+
+9.启动web服务 确保正常访问CRL_uri
+python3 -m http.server 8000
+访问
+http://服务器IP/current.crl

@@ -1,0 +1,34 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/nist_sts.dir/approximateEntropy.c.o"
+  "CMakeFiles/nist_sts.dir/binaryDerivate.c.o"
+  "CMakeFiles/nist_sts.dir/blockFrequency.c.o"
+  "CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o"
+  "CMakeFiles/nist_sts.dir/cephes.c.o"
+  "CMakeFiles/nist_sts.dir/cusum.c.o"
+  "CMakeFiles/nist_sts.dir/dfft.c.o"
+  "CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o"
+  "CMakeFiles/nist_sts.dir/erf.c.o"
+  "CMakeFiles/nist_sts.dir/frequency.c.o"
+  "CMakeFiles/nist_sts.dir/genutils.c.o"
+  "CMakeFiles/nist_sts.dir/linearComplexity.c.o"
+  "CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o"
+  "CMakeFiles/nist_sts.dir/matrix.c.o"
+  "CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o"
+  "CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o"
+  "CMakeFiles/nist_sts.dir/pokerDetect.c.o"
+  "CMakeFiles/nist_sts.dir/randomExcursions.c.o"
+  "CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o"
+  "CMakeFiles/nist_sts.dir/rank.c.o"
+  "CMakeFiles/nist_sts.dir/runs.c.o"
+  "CMakeFiles/nist_sts.dir/runsDistribution.c.o"
+  "CMakeFiles/nist_sts.dir/selfCorrelation.c.o"
+  "CMakeFiles/nist_sts.dir/serial.c.o"
+  "CMakeFiles/nist_sts.dir/universal.c.o"
+  "libnist_sts.a"
+  "libnist_sts.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/nist_sts.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

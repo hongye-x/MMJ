@@ -1,0 +1,3 @@
+1.用户登录采用 PIN + Sig(random)的形式
+2.用户端API需提供软算法SM3,对PIN码进行摘要
+3.无KEY情况下仅模拟KEYUUID,有KEY情况采用SKF接口读取UUID

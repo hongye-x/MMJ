@@ -1,0 +1,5 @@
+/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles/edit_cache.dir
+/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles/rebuild_cache.dir
+/root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts/CMakeFiles/nist_sts.dir
+/root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts/CMakeFiles/edit_cache.dir
+/root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts/CMakeFiles/rebuild_cache.dir

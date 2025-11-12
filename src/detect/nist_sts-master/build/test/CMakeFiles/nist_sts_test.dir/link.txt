@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/nist_sts_test.dir/main.c.o  -o nist_sts_test   -L/usr/local/gmssl-g-1.3.0/lib  -Wl,-rpath,/usr/local/gmssl-g-1.3.0/lib ../nist_sts/libnist_sts.a -lcrypto -lm 
