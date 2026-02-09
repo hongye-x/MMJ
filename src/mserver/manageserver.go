@@ -7,11 +7,10 @@ import "C"
 
 import (
 	"encoding/binary"
-	"encoding/pem"
 	"fmt"
 	"net"
+	"net/rpc"
 	"os"
-	"os/exec"
 	b "sig_vfy/src/base"
 	ISDF "sig_vfy/src/crypto"
 	i "sig_vfy/src/initialize"
@@ -19,15 +18,16 @@ import (
 	slog "sig_vfy/src/log"
 	ISV "sig_vfy/src/sigvfy"
 	"sig_vfy/src/sqlop"
-	"strings"
 	"sync"
-	"time"
 	"unsafe"
 )
 
 var s_m_sockname = "/tmp/Ser_Man.sock"
 
-var GLinuxSock net.Conn = nil // Cserver的域套接字
+var ( // Cserver的域套接字
+	cryptoClient *rpc.Client
+	clientMu     sync.Mutex
+)
 
 var RWmu sync.RWMutex
 var UserMserver int = 127 // 管理服务用户type
@@ -74,19 +74,28 @@ func msinit() *b.StdErr {
 		slog.MServerLogWrite(slog.Error,
 			UserMserver, UserMserverUUID,
 			"SDF OpenDev Func Error Code[%08X]", iret)
-		return nil
+		os.Exit(1)
 	} else {
 		sesh, iret := ISDF.OpenSession(devh)
 		if iret != 0 {
 			slog.MServerLogWrite(slog.Error,
 				UserMserver, UserMserverUUID,
 				"SDF OpenSes Func Error Code[%08X]", iret)
-			return nil
+			os.Exit(1)
 		} else {
 			MSDevH = devh
 			MSSesH = sesh
 		}
 	}
+
+	iret = ISDF.Sudo(MSSesH)
+	if iret != 0 {
+		slog.MServerLogWrite(slog.Error,
+			UserMserver, UserMserverUUID,
+			"SDF GetRight Func Error Code[%08X]", iret)
+		os.Exit(1)
+	}
+
 	MSCAMap = ISV.GCaInfo
 
 	ManSerStatus.ConnNums = 0
@@ -111,35 +120,37 @@ func msclean() {
 	slog.LogDeInit()
 }
 
-func checkCyptoSExist() {
-	for {
-		cmd := exec.Command("pgrep", "-f", "cryptoserver")
-		output, err := cmd.Output()
+func getRPCClient() (*rpc.Client, error) {
+	clientMu.Lock()
+	defer clientMu.Unlock()
 
-		if err != nil {
-			if strings.Contains(err.Error(), "exit status 1") {
-				GLinuxSock = nil
-			} else {
-				fmt.Printf("Error: %v\n", err)
-			}
-		} else if len(output) > 0 {
-			if GLinuxSock == nil {
-				conn, err := net.Dial("unix", s_m_sockname)
-				if err != nil {
-				} else {
-					GLinuxSock = conn
-				}
-			}
+	// 如果已有客户端，检查是否健康
+	if cryptoClient != nil {
+		var dummy int
+		err := cryptoClient.Call("Ping.Ping", &struct{}{}, &dummy)
+		if err == nil {
+			return cryptoClient, nil
 		}
-		time.Sleep(1 * time.Second)
+		// 连接失效，清理
+		cryptoClient.Close()
+		cryptoClient = nil
 	}
+
+	// 创建新连接
+	conn, err := net.Dial("unix", s_m_sockname)
+	if err != nil {
+		return nil, err
+	}
+
+	cryptoClient = rpc.NewClient(conn)
+	return cryptoClient, nil
 }
 
 func main() {
 	msinit()
 	defer msclean()
 
-	go checkCyptoSExist()
+	go getRPCClient()
 
 	// 软件完整性校验
 
@@ -241,103 +252,103 @@ func main() {
 	}
 }
 
-func testcreate() {
-	var cif ISV.MemoryCAInfo
-	cif.Name = []byte("testCA")
-	cif.IP = []byte("1.1.1.1:12312")
-	cif.Status = 0
+// func testcreate() {
+// 	var cif ISV.MemoryCAInfo
+// 	cif.Name = []byte("testCA")
+// 	cif.IP = []byte("1.1.1.1:12312")
+// 	cif.Status = 0
 
-	cif.DefaultCRL = []byte("")
-	cif.DefaultOCSP = []byte("")
-	stderr := ISV.UpdateCaInfo2Sql(&cif, nil)
-	if stderr != nil {
-		slog.MServerLogWrite(slog.Error,
-			UserMserver, UserMserverUUID,
-			"Update CA Info Error Code[%08X]", stderr.Errcode)
-		b.PrintStdErr(stderr)
-		return
-	}
+// 	cif.DefaultCRL = []byte("")
+// 	cif.DefaultOCSP = []byte("")
+// 	stderr := ISV.UpdateCaInfo2Sql(&cif, nil)
+// 	if stderr != nil {
+// 		slog.MServerLogWrite(slog.Error,
+// 			UserMserver, UserMserverUUID,
+// 			"Update CA Info Error Code[%08X]", stderr.Errcode)
+// 		b.PrintStdErr(stderr)
+// 		return
+// 	}
 
-	var cifcert ISV.MemoryCACertInfo
-	cifcert.BelongCAName = cif.Name
-	cacrt, _ := os.ReadFile("../test/certtest/ca.crt")
-	cacertder, _ := pem.Decode(cacrt)
-	x509c, err := ISV.ParseCert2_x509(cacertder.Bytes)
-	cifcert.CertPem = cacrt
-	cifcert.CertSerial = x509c.SerialNumber.Bytes()
+// 	var cifcert ISV.MemoryCACertInfo
+// 	cifcert.BelongCAName = cif.Name
+// 	cacrt, _ := os.ReadFile("../test/certtest/ca.crt")
+// 	cacertder, _ := pem.Decode(cacrt)
+// 	x509c, err := ISV.ParseCert2_x509(cacertder.Bytes)
+// 	cifcert.CertPem = cacrt
+// 	cifcert.CertSerial = x509c.SerialNumber.Bytes()
 
-	stderr = ISV.UpdatCACertInfo2Sql(&cifcert)
-	if stderr != nil {
-		slog.MServerLogWrite(slog.Error,
-			UserMserver, UserMserverUUID,
-			"Update CACert Info Error Code[%08X]", stderr.Errcode)
-		b.PrintStdErr(stderr)
-		return
-	}
+// 	stderr = ISV.UpdatCACertInfo2Sql(&cifcert)
+// 	if stderr != nil {
+// 		slog.MServerLogWrite(slog.Error,
+// 			UserMserver, UserMserverUUID,
+// 			"Update CACert Info Error Code[%08X]", stderr.Errcode)
+// 		b.PrintStdErr(stderr)
+// 		return
+// 	}
 
-	var apif ISV.MemoryAPPInfo
-	apif.Name = []byte("testApp")
-	apif.IP = []byte("1.1.1.2:123")
-	apif.CAName = []byte("testCA")
-	apif.Status = 0
-	stderr = ISV.UpdateAppInfo2Sql(&apif, nil)
-	if stderr != nil {
-		slog.MServerLogWrite(slog.Error,
-			UserMserver, UserMserverUUID,
-			"Update App Info Error Code[%08X]", stderr.Errcode)
-		b.PrintStdErr(stderr)
-		return
-	}
+// 	var apif ISV.MemoryAPPInfo
+// 	apif.Name = []byte("testApp")
+// 	apif.IP = []byte("1.1.1.2:123")
+// 	apif.CAName = []byte("testCA")
+// 	apif.Status = 0
+// 	stderr = ISV.UpdateAppInfo2Sql(&apif, nil)
+// 	if stderr != nil {
+// 		slog.MServerLogWrite(slog.Error,
+// 			UserMserver, UserMserverUUID,
+// 			"Update App Info Error Code[%08X]", stderr.Errcode)
+// 		b.PrintStdErr(stderr)
+// 		return
+// 	}
 
-	var crtif ISV.MemoryAppCertInfo
-	crtif.BelongKeyType = 0
-	crtif.BelongKeyIdx = 1
-	crtif.BelongKeySV = 0
-	crtif.BelongAppName = apif.Name
-	crtif.BelongCAName = apif.CAName
-	usercrt, _ := os.ReadFile("../test/certtest/user_enc.crt")
-	usercertder, _ := pem.Decode(usercrt)
-	x509u, err := ISV.ParseCert2_x509(usercertder.Bytes)
-	if err != nil {
-		fmt.Println(err)
-	}
-	crtif.CertPem = usercrt
-	crtif.CertSerial = x509u.SerialNumber.Bytes()
+// 	var crtif ISV.MemoryAppCertInfo
+// 	crtif.BelongKeyType = 0
+// 	crtif.BelongKeyIdx = 1
+// 	crtif.BelongKeySV = 0
+// 	crtif.BelongAppName = apif.Name
+// 	crtif.BelongCAName = apif.CAName
+// 	usercrt, _ := os.ReadFile("../test/certtest/user_enc.crt")
+// 	usercertder, _ := pem.Decode(usercrt)
+// 	x509u, err := ISV.ParseCert2_x509(usercertder.Bytes)
+// 	if err != nil {
+// 		fmt.Println(err)
+// 	}
+// 	crtif.CertPem = usercrt
+// 	crtif.CertSerial = x509u.SerialNumber.Bytes()
 
-	stderr = ISV.UpdateAppCertInfo2Sql(&crtif)
-	if stderr != nil {
-		slog.MServerLogWrite(slog.Error,
-			UserMserver, UserMserverUUID,
-			"Update Cert Info Error Code[%08X]", stderr.Errcode)
-		b.PrintStdErr(stderr)
-		return
-	}
+// 	stderr = ISV.UpdateAppCertInfo2Sql(&crtif)
+// 	if stderr != nil {
+// 		slog.MServerLogWrite(slog.Error,
+// 			UserMserver, UserMserverUUID,
+// 			"Update Cert Info Error Code[%08X]", stderr.Errcode)
+// 		b.PrintStdErr(stderr)
+// 		return
+// 	}
 
-	stderr = ISV.ReLoadCaInfoFromSql(cif.Name)
-	if stderr != nil {
-		slog.MServerLogWrite(slog.Error,
-			UserMserver, UserMserverUUID,
-			"Reload CA Info Error Code[%08X]", stderr.Errcode)
-		b.PrintStdErr(stderr)
-		return
-	}
+// 	stderr = ISV.ReLoadCaInfoFromSql(cif.Name)
+// 	if stderr != nil {
+// 		slog.MServerLogWrite(slog.Error,
+// 			UserMserver, UserMserverUUID,
+// 			"Reload CA Info Error Code[%08X]", stderr.Errcode)
+// 		b.PrintStdErr(stderr)
+// 		return
+// 	}
 
-	stderr = ISV.ReloadAppInfoFromSql(apif.Name)
-	if stderr != nil {
-		slog.MServerLogWrite(slog.Error,
-			UserMserver, UserMserverUUID,
-			"Reload App Info Error Code[%08X]", stderr.Errcode)
-		b.PrintStdErr(stderr)
-		return
-	}
+// 	stderr = ISV.ReloadAppInfoFromSql(apif.Name)
+// 	if stderr != nil {
+// 		slog.MServerLogWrite(slog.Error,
+// 			UserMserver, UserMserverUUID,
+// 			"Reload App Info Error Code[%08X]", stderr.Errcode)
+// 		b.PrintStdErr(stderr)
+// 		return
+// 	}
 
-	stderr = ISV.ReloadAppCertInfoFromSql(crtif.CertSerial)
-	if stderr != nil {
-		slog.MServerLogWrite(slog.Error,
-			UserMserver, UserMserverUUID,
-			"Reload Cert Info Error Code[%08X]", stderr.Errcode)
-		b.PrintStdErr(stderr)
-		return
-	}
+// 	stderr = ISV.ReloadAppCertInfoFromSql(crtif.CertSerial)
+// 	if stderr != nil {
+// 		slog.MServerLogWrite(slog.Error,
+// 			UserMserver, UserMserverUUID,
+// 			"Reload Cert Info Error Code[%08X]", stderr.Errcode)
+// 		b.PrintStdErr(stderr)
+// 		return
+// 	}
 
-}
+// }

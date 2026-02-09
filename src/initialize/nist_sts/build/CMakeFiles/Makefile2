@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/sig_vfy/src/initialize/nist_sts
+CMAKE_SOURCE_DIR = /root/selfPro/MMJ/src/initialize/nist_sts
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/sig_vfy/src/initialize/nist_sts/build
+CMAKE_BINARY_DIR = /root/selfPro/MMJ/src/initialize/nist_sts/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -96,14 +96,14 @@ nist_sts/clean: nist_sts/CMakeFiles/nist_sts.dir/clean
 nist_sts/CMakeFiles/nist_sts.dir/all:
 	$(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/depend
 	$(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target nist_sts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target nist_sts"
 .PHONY : nist_sts/CMakeFiles/nist_sts.dir/all
 
 # Build rule for subdir invocation for target.
 nist_sts/CMakeFiles/nist_sts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/CMakeFiles/nist_sts.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles 0
 .PHONY : nist_sts/CMakeFiles/nist_sts.dir/rule
 
 # Convenience name for target.

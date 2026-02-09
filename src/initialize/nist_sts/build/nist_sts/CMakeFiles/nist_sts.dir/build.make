@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/sig_vfy/src/initialize/nist_sts
+CMAKE_SOURCE_DIR = /root/selfPro/MMJ/src/initialize/nist_sts
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/sig_vfy/src/initialize/nist_sts/build
+CMAKE_BINARY_DIR = /root/selfPro/MMJ/src/initialize/nist_sts/build
 
 # Include any dependencies generated for this target.
 include nist_sts/CMakeFiles/nist_sts.dir/depend.make
@@ -72,352 +72,352 @@ include nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o: ../nist_sts/approximateEntropy.c
 nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o -MF CMakeFiles/nist_sts.dir/approximateEntropy.c.o.d -o CMakeFiles/nist_sts.dir/approximateEntropy.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/approximateEntropy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o -MF CMakeFiles/nist_sts.dir/approximateEntropy.c.o.d -o CMakeFiles/nist_sts.dir/approximateEntropy.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/approximateEntropy.c
 
 nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/approximateEntropy.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/approximateEntropy.c > CMakeFiles/nist_sts.dir/approximateEntropy.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/approximateEntropy.c > CMakeFiles/nist_sts.dir/approximateEntropy.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/approximateEntropy.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/approximateEntropy.c -o CMakeFiles/nist_sts.dir/approximateEntropy.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/approximateEntropy.c -o CMakeFiles/nist_sts.dir/approximateEntropy.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o: ../nist_sts/binaryDerivate.c
 nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o -MF CMakeFiles/nist_sts.dir/binaryDerivate.c.o.d -o CMakeFiles/nist_sts.dir/binaryDerivate.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/binaryDerivate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o -MF CMakeFiles/nist_sts.dir/binaryDerivate.c.o.d -o CMakeFiles/nist_sts.dir/binaryDerivate.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/binaryDerivate.c
 
 nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/binaryDerivate.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/binaryDerivate.c > CMakeFiles/nist_sts.dir/binaryDerivate.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/binaryDerivate.c > CMakeFiles/nist_sts.dir/binaryDerivate.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/binaryDerivate.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/binaryDerivate.c -o CMakeFiles/nist_sts.dir/binaryDerivate.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/binaryDerivate.c -o CMakeFiles/nist_sts.dir/binaryDerivate.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o: ../nist_sts/blockFrequency.c
 nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o -MF CMakeFiles/nist_sts.dir/blockFrequency.c.o.d -o CMakeFiles/nist_sts.dir/blockFrequency.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/blockFrequency.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o -MF CMakeFiles/nist_sts.dir/blockFrequency.c.o.d -o CMakeFiles/nist_sts.dir/blockFrequency.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/blockFrequency.c
 
 nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/blockFrequency.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/blockFrequency.c > CMakeFiles/nist_sts.dir/blockFrequency.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/blockFrequency.c > CMakeFiles/nist_sts.dir/blockFrequency.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/blockFrequency.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/blockFrequency.c -o CMakeFiles/nist_sts.dir/blockFrequency.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/blockFrequency.c -o CMakeFiles/nist_sts.dir/blockFrequency.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o: ../nist_sts/bytesToBitSequence.c
 nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o -MF CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o.d -o CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/bytesToBitSequence.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o -MF CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o.d -o CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/bytesToBitSequence.c
 
 nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/bytesToBitSequence.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/bytesToBitSequence.c > CMakeFiles/nist_sts.dir/bytesToBitSequence.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/bytesToBitSequence.c > CMakeFiles/nist_sts.dir/bytesToBitSequence.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/bytesToBitSequence.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/bytesToBitSequence.c -o CMakeFiles/nist_sts.dir/bytesToBitSequence.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/bytesToBitSequence.c -o CMakeFiles/nist_sts.dir/bytesToBitSequence.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o: ../nist_sts/cephes.c
 nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o -MF CMakeFiles/nist_sts.dir/cephes.c.o.d -o CMakeFiles/nist_sts.dir/cephes.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/cephes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o -MF CMakeFiles/nist_sts.dir/cephes.c.o.d -o CMakeFiles/nist_sts.dir/cephes.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/cephes.c
 
 nist_sts/CMakeFiles/nist_sts.dir/cephes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/cephes.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/cephes.c > CMakeFiles/nist_sts.dir/cephes.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/cephes.c > CMakeFiles/nist_sts.dir/cephes.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/cephes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/cephes.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/cephes.c -o CMakeFiles/nist_sts.dir/cephes.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/cephes.c -o CMakeFiles/nist_sts.dir/cephes.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o: ../nist_sts/cusum.c
 nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o -MF CMakeFiles/nist_sts.dir/cusum.c.o.d -o CMakeFiles/nist_sts.dir/cusum.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/cusum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o -MF CMakeFiles/nist_sts.dir/cusum.c.o.d -o CMakeFiles/nist_sts.dir/cusum.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/cusum.c
 
 nist_sts/CMakeFiles/nist_sts.dir/cusum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/cusum.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/cusum.c > CMakeFiles/nist_sts.dir/cusum.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/cusum.c > CMakeFiles/nist_sts.dir/cusum.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/cusum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/cusum.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/cusum.c -o CMakeFiles/nist_sts.dir/cusum.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/cusum.c -o CMakeFiles/nist_sts.dir/cusum.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o: ../nist_sts/dfft.c
 nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o -MF CMakeFiles/nist_sts.dir/dfft.c.o.d -o CMakeFiles/nist_sts.dir/dfft.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/dfft.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o -MF CMakeFiles/nist_sts.dir/dfft.c.o.d -o CMakeFiles/nist_sts.dir/dfft.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/dfft.c
 
 nist_sts/CMakeFiles/nist_sts.dir/dfft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/dfft.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/dfft.c > CMakeFiles/nist_sts.dir/dfft.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/dfft.c > CMakeFiles/nist_sts.dir/dfft.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/dfft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/dfft.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/dfft.c -o CMakeFiles/nist_sts.dir/dfft.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/dfft.c -o CMakeFiles/nist_sts.dir/dfft.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o: ../nist_sts/discreteFourierTransform.c
 nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o -MF CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o.d -o CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o -MF CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o.d -o CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c
 
 nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/discreteFourierTransform.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c > CMakeFiles/nist_sts.dir/discreteFourierTransform.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c > CMakeFiles/nist_sts.dir/discreteFourierTransform.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/discreteFourierTransform.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c -o CMakeFiles/nist_sts.dir/discreteFourierTransform.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c -o CMakeFiles/nist_sts.dir/discreteFourierTransform.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/erf.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/erf.c.o: ../nist_sts/erf.c
 nist_sts/CMakeFiles/nist_sts.dir/erf.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object nist_sts/CMakeFiles/nist_sts.dir/erf.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/erf.c.o -MF CMakeFiles/nist_sts.dir/erf.c.o.d -o CMakeFiles/nist_sts.dir/erf.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/erf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object nist_sts/CMakeFiles/nist_sts.dir/erf.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/erf.c.o -MF CMakeFiles/nist_sts.dir/erf.c.o.d -o CMakeFiles/nist_sts.dir/erf.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/erf.c
 
 nist_sts/CMakeFiles/nist_sts.dir/erf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/erf.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/erf.c > CMakeFiles/nist_sts.dir/erf.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/erf.c > CMakeFiles/nist_sts.dir/erf.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/erf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/erf.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/erf.c -o CMakeFiles/nist_sts.dir/erf.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/erf.c -o CMakeFiles/nist_sts.dir/erf.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o: ../nist_sts/frequency.c
 nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o -MF CMakeFiles/nist_sts.dir/frequency.c.o.d -o CMakeFiles/nist_sts.dir/frequency.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/frequency.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o -MF CMakeFiles/nist_sts.dir/frequency.c.o.d -o CMakeFiles/nist_sts.dir/frequency.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/frequency.c
 
 nist_sts/CMakeFiles/nist_sts.dir/frequency.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/frequency.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/frequency.c > CMakeFiles/nist_sts.dir/frequency.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/frequency.c > CMakeFiles/nist_sts.dir/frequency.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/frequency.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/frequency.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/frequency.c -o CMakeFiles/nist_sts.dir/frequency.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/frequency.c -o CMakeFiles/nist_sts.dir/frequency.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o: ../nist_sts/genutils.c
 nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o -MF CMakeFiles/nist_sts.dir/genutils.c.o.d -o CMakeFiles/nist_sts.dir/genutils.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/genutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o -MF CMakeFiles/nist_sts.dir/genutils.c.o.d -o CMakeFiles/nist_sts.dir/genutils.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/genutils.c
 
 nist_sts/CMakeFiles/nist_sts.dir/genutils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/genutils.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/genutils.c > CMakeFiles/nist_sts.dir/genutils.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/genutils.c > CMakeFiles/nist_sts.dir/genutils.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/genutils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/genutils.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/genutils.c -o CMakeFiles/nist_sts.dir/genutils.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/genutils.c -o CMakeFiles/nist_sts.dir/genutils.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o: ../nist_sts/linearComplexity.c
 nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o -MF CMakeFiles/nist_sts.dir/linearComplexity.c.o.d -o CMakeFiles/nist_sts.dir/linearComplexity.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/linearComplexity.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o -MF CMakeFiles/nist_sts.dir/linearComplexity.c.o.d -o CMakeFiles/nist_sts.dir/linearComplexity.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/linearComplexity.c
 
 nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/linearComplexity.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/linearComplexity.c > CMakeFiles/nist_sts.dir/linearComplexity.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/linearComplexity.c > CMakeFiles/nist_sts.dir/linearComplexity.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/linearComplexity.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/linearComplexity.c -o CMakeFiles/nist_sts.dir/linearComplexity.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/linearComplexity.c -o CMakeFiles/nist_sts.dir/linearComplexity.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o: ../nist_sts/longestRunOfOnes.c
 nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o -MF CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o.d -o CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/longestRunOfOnes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o -MF CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o.d -o CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/longestRunOfOnes.c
 
 nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/longestRunOfOnes.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/longestRunOfOnes.c > CMakeFiles/nist_sts.dir/longestRunOfOnes.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/longestRunOfOnes.c > CMakeFiles/nist_sts.dir/longestRunOfOnes.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/longestRunOfOnes.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/longestRunOfOnes.c -o CMakeFiles/nist_sts.dir/longestRunOfOnes.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/longestRunOfOnes.c -o CMakeFiles/nist_sts.dir/longestRunOfOnes.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o: ../nist_sts/matrix.c
 nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o -MF CMakeFiles/nist_sts.dir/matrix.c.o.d -o CMakeFiles/nist_sts.dir/matrix.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o -MF CMakeFiles/nist_sts.dir/matrix.c.o.d -o CMakeFiles/nist_sts.dir/matrix.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/matrix.c
 
 nist_sts/CMakeFiles/nist_sts.dir/matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/matrix.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/matrix.c > CMakeFiles/nist_sts.dir/matrix.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/matrix.c > CMakeFiles/nist_sts.dir/matrix.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/matrix.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/matrix.c -o CMakeFiles/nist_sts.dir/matrix.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/matrix.c -o CMakeFiles/nist_sts.dir/matrix.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o: ../nist_sts/nonOverlappingTemplateMatchings.c
 nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o -MF CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o.d -o CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/nonOverlappingTemplateMatchings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o -MF CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o.d -o CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/nonOverlappingTemplateMatchings.c
 
 nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/nonOverlappingTemplateMatchings.c > CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/nonOverlappingTemplateMatchings.c > CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/nonOverlappingTemplateMatchings.c -o CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/nonOverlappingTemplateMatchings.c -o CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o: ../nist_sts/overlappingTemplateMatchings.c
 nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o -MF CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o.d -o CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/overlappingTemplateMatchings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o -MF CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o.d -o CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/overlappingTemplateMatchings.c
 
 nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/overlappingTemplateMatchings.c > CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/overlappingTemplateMatchings.c > CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/overlappingTemplateMatchings.c -o CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/overlappingTemplateMatchings.c -o CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o: ../nist_sts/pokerDetect.c
 nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o -MF CMakeFiles/nist_sts.dir/pokerDetect.c.o.d -o CMakeFiles/nist_sts.dir/pokerDetect.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/pokerDetect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o -MF CMakeFiles/nist_sts.dir/pokerDetect.c.o.d -o CMakeFiles/nist_sts.dir/pokerDetect.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/pokerDetect.c
 
 nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/pokerDetect.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/pokerDetect.c > CMakeFiles/nist_sts.dir/pokerDetect.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/pokerDetect.c > CMakeFiles/nist_sts.dir/pokerDetect.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/pokerDetect.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/pokerDetect.c -o CMakeFiles/nist_sts.dir/pokerDetect.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/pokerDetect.c -o CMakeFiles/nist_sts.dir/pokerDetect.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o: ../nist_sts/randomExcursions.c
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o -MF CMakeFiles/nist_sts.dir/randomExcursions.c.o.d -o CMakeFiles/nist_sts.dir/randomExcursions.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/randomExcursions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o -MF CMakeFiles/nist_sts.dir/randomExcursions.c.o.d -o CMakeFiles/nist_sts.dir/randomExcursions.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/randomExcursions.c
 
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/randomExcursions.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/randomExcursions.c > CMakeFiles/nist_sts.dir/randomExcursions.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/randomExcursions.c > CMakeFiles/nist_sts.dir/randomExcursions.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/randomExcursions.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/randomExcursions.c -o CMakeFiles/nist_sts.dir/randomExcursions.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/randomExcursions.c -o CMakeFiles/nist_sts.dir/randomExcursions.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o: ../nist_sts/randomExcursionsVariant.c
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o -MF CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o.d -o CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/randomExcursionsVariant.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o -MF CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o.d -o CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/randomExcursionsVariant.c
 
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/randomExcursionsVariant.c > CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/randomExcursionsVariant.c > CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/randomExcursionsVariant.c -o CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/randomExcursionsVariant.c -o CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/rank.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/rank.c.o: ../nist_sts/rank.c
 nist_sts/CMakeFiles/nist_sts.dir/rank.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object nist_sts/CMakeFiles/nist_sts.dir/rank.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/rank.c.o -MF CMakeFiles/nist_sts.dir/rank.c.o.d -o CMakeFiles/nist_sts.dir/rank.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/rank.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object nist_sts/CMakeFiles/nist_sts.dir/rank.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/rank.c.o -MF CMakeFiles/nist_sts.dir/rank.c.o.d -o CMakeFiles/nist_sts.dir/rank.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/rank.c
 
 nist_sts/CMakeFiles/nist_sts.dir/rank.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/rank.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/rank.c > CMakeFiles/nist_sts.dir/rank.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/rank.c > CMakeFiles/nist_sts.dir/rank.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/rank.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/rank.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/rank.c -o CMakeFiles/nist_sts.dir/rank.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/rank.c -o CMakeFiles/nist_sts.dir/rank.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/runs.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/runs.c.o: ../nist_sts/runs.c
 nist_sts/CMakeFiles/nist_sts.dir/runs.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object nist_sts/CMakeFiles/nist_sts.dir/runs.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/runs.c.o -MF CMakeFiles/nist_sts.dir/runs.c.o.d -o CMakeFiles/nist_sts.dir/runs.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/runs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object nist_sts/CMakeFiles/nist_sts.dir/runs.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/runs.c.o -MF CMakeFiles/nist_sts.dir/runs.c.o.d -o CMakeFiles/nist_sts.dir/runs.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/runs.c
 
 nist_sts/CMakeFiles/nist_sts.dir/runs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/runs.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/runs.c > CMakeFiles/nist_sts.dir/runs.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/runs.c > CMakeFiles/nist_sts.dir/runs.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/runs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/runs.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/runs.c -o CMakeFiles/nist_sts.dir/runs.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/runs.c -o CMakeFiles/nist_sts.dir/runs.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o: ../nist_sts/runsDistribution.c
 nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o -MF CMakeFiles/nist_sts.dir/runsDistribution.c.o.d -o CMakeFiles/nist_sts.dir/runsDistribution.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/runsDistribution.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o -MF CMakeFiles/nist_sts.dir/runsDistribution.c.o.d -o CMakeFiles/nist_sts.dir/runsDistribution.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/runsDistribution.c
 
 nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/runsDistribution.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/runsDistribution.c > CMakeFiles/nist_sts.dir/runsDistribution.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/runsDistribution.c > CMakeFiles/nist_sts.dir/runsDistribution.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/runsDistribution.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/runsDistribution.c -o CMakeFiles/nist_sts.dir/runsDistribution.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/runsDistribution.c -o CMakeFiles/nist_sts.dir/runsDistribution.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o: ../nist_sts/selfCorrelation.c
 nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o -MF CMakeFiles/nist_sts.dir/selfCorrelation.c.o.d -o CMakeFiles/nist_sts.dir/selfCorrelation.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/selfCorrelation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o -MF CMakeFiles/nist_sts.dir/selfCorrelation.c.o.d -o CMakeFiles/nist_sts.dir/selfCorrelation.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/selfCorrelation.c
 
 nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/selfCorrelation.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/selfCorrelation.c > CMakeFiles/nist_sts.dir/selfCorrelation.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/selfCorrelation.c > CMakeFiles/nist_sts.dir/selfCorrelation.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/selfCorrelation.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/selfCorrelation.c -o CMakeFiles/nist_sts.dir/selfCorrelation.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/selfCorrelation.c -o CMakeFiles/nist_sts.dir/selfCorrelation.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/serial.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/serial.c.o: ../nist_sts/serial.c
 nist_sts/CMakeFiles/nist_sts.dir/serial.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object nist_sts/CMakeFiles/nist_sts.dir/serial.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/serial.c.o -MF CMakeFiles/nist_sts.dir/serial.c.o.d -o CMakeFiles/nist_sts.dir/serial.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/serial.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object nist_sts/CMakeFiles/nist_sts.dir/serial.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/serial.c.o -MF CMakeFiles/nist_sts.dir/serial.c.o.d -o CMakeFiles/nist_sts.dir/serial.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/serial.c
 
 nist_sts/CMakeFiles/nist_sts.dir/serial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/serial.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/serial.c > CMakeFiles/nist_sts.dir/serial.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/serial.c > CMakeFiles/nist_sts.dir/serial.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/serial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/serial.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/serial.c -o CMakeFiles/nist_sts.dir/serial.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/serial.c -o CMakeFiles/nist_sts.dir/serial.c.s
 
 nist_sts/CMakeFiles/nist_sts.dir/universal.c.o: nist_sts/CMakeFiles/nist_sts.dir/flags.make
 nist_sts/CMakeFiles/nist_sts.dir/universal.c.o: ../nist_sts/universal.c
 nist_sts/CMakeFiles/nist_sts.dir/universal.c.o: nist_sts/CMakeFiles/nist_sts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object nist_sts/CMakeFiles/nist_sts.dir/universal.c.o"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/universal.c.o -MF CMakeFiles/nist_sts.dir/universal.c.o.d -o CMakeFiles/nist_sts.dir/universal.c.o -c /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/universal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object nist_sts/CMakeFiles/nist_sts.dir/universal.c.o"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT nist_sts/CMakeFiles/nist_sts.dir/universal.c.o -MF CMakeFiles/nist_sts.dir/universal.c.o.d -o CMakeFiles/nist_sts.dir/universal.c.o -c /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/universal.c
 
 nist_sts/CMakeFiles/nist_sts.dir/universal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nist_sts.dir/universal.c.i"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/universal.c > CMakeFiles/nist_sts.dir/universal.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/universal.c > CMakeFiles/nist_sts.dir/universal.c.i
 
 nist_sts/CMakeFiles/nist_sts.dir/universal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nist_sts.dir/universal.c.s"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/universal.c -o CMakeFiles/nist_sts.dir/universal.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && /usr/bin/x86_64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/universal.c -o CMakeFiles/nist_sts.dir/universal.c.s
 
 # Object files for target nist_sts
 nist_sts_OBJECTS = \
@@ -477,18 +477,18 @@ nist_sts/libnist_sts.so: nist_sts/CMakeFiles/nist_sts.dir/serial.c.o
 nist_sts/libnist_sts.so: nist_sts/CMakeFiles/nist_sts.dir/universal.c.o
 nist_sts/libnist_sts.so: nist_sts/CMakeFiles/nist_sts.dir/build.make
 nist_sts/libnist_sts.so: nist_sts/CMakeFiles/nist_sts.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking C shared library libnist_sts.so"
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nist_sts.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking C shared library libnist_sts.so"
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nist_sts.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 nist_sts/CMakeFiles/nist_sts.dir/build: nist_sts/libnist_sts.so
 .PHONY : nist_sts/CMakeFiles/nist_sts.dir/build
 
 nist_sts/CMakeFiles/nist_sts.dir/clean:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts && $(CMAKE_COMMAND) -P CMakeFiles/nist_sts.dir/cmake_clean.cmake
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts && $(CMAKE_COMMAND) -P CMakeFiles/nist_sts.dir/cmake_clean.cmake
 .PHONY : nist_sts/CMakeFiles/nist_sts.dir/clean
 
 nist_sts/CMakeFiles/nist_sts.dir/depend:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/workspace/sig_vfy/src/initialize/nist_sts /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts /root/workspace/sig_vfy/src/initialize/nist_sts/build /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts/CMakeFiles/nist_sts.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/selfPro/MMJ/src/initialize/nist_sts /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts /root/selfPro/MMJ/src/initialize/nist_sts/build /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts/CMakeFiles/nist_sts.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : nist_sts/CMakeFiles/nist_sts.dir/depend
 

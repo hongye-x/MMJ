@@ -563,6 +563,11 @@ func SetPivKPinInSQL(sesh unsafe.Pointer, keyIdx int, keyType int, keypin []byte
 		b64auth = base64.StdEncoding.EncodeToString(dig)
 	}
 
+	count, err := checkKeyExistInSql(keyIdx, keyType)
+	if count == 0 || err != nil {
+		return b.CreateStdErr(b.PIV_PIN_SET_ERROR, "%v", err1.Error)
+	}
+
 	keyIdx2 := keyIdx + 1
 	if keyType == SM2_TYPE_FLAG {
 		err1 = sqlop.Gsqlh.Model(&sqlop.EccKey{}).Where("key_idx = ?", keyIdx).

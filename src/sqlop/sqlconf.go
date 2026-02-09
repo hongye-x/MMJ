@@ -121,3 +121,15 @@ type AppCertHistory struct {
 	FailureTime    time.Time `gorm:"column:failure_time"`
 	FailureReason  []byte    `gorm:"column:failure_reason"`
 }
+
+type WebLog struct {
+	ID             uint64     `gorm:"column:id;primaryKey;autoIncrement;not null"`
+	LogLevel       []byte     `gorm:"column:log_level;type:longblob;not null"`
+	UserType       int64      `gorm:"column:user_type;not null"`
+	UserNameOrUUID []byte     `gorm:"column:user_name_or_uuid;type:varbinary(32);not null"`
+	Message        string     `gorm:"column:message;type:longtext"`
+	RecordTime     *time.Time `gorm:"column:record_time"`
+
+	CreatedAt time.Time `gorm:"autoCreateTime"`
+	UpdatedAt time.Time `gorm:"autoUpdateTime"`
+}

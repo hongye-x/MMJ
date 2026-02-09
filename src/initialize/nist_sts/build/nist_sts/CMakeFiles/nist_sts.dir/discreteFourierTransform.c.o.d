@@ -1,5 +1,5 @@
 nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o: \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/discreteFourierTransform.c \
  /usr/include/stdc-predef.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -50,8 +50,8 @@ nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/externs.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/defs.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/config.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/cephes.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/erf.h
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/externs.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/defs.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/config.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/cephes.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/erf.h

@@ -59,7 +59,8 @@ func SqlCreate() *b.StdErr {
 		&EccKey{}, &RsaKey{}, &UserInfo{},
 		&IPWhiteTable{}, &ManageLog{}, &ServerLog{},
 		&IfDevInited{}, &CAInfo{}, &AppInfo{},
-		&AppCert{}, &CACert{}, &AppCertHistory{})
+		&AppCert{}, &CACert{}, &AppCertHistory{},
+		&WebLog{})
 	if err != nil {
 		return b.CreateStdErr(b.SQL_CREATETB_ERROR, err.Error())
 	}

@@ -76,6 +76,13 @@ func csinit() *b.StdErr {
 			CSSesH = sesh
 		}
 	}
+	iret = ISDF.Sudo(CSSesH)
+	if iret != 0 {
+		slog.CServerLogWrite(slog.Error, "127.0.0.1",
+			"Crypto Server Start --> SDF GetRight Func Error Code[%08X]", iret)
+		os.Exit(1)
+	}
+
 	CSSymMap = keymanage.MemSymMap
 	CSSm2Map = keymanage.MemSM2Map
 	CSRsaMap = keymanage.MemRSAMap

@@ -1,4 +1,4 @@
-# Install script for directory: /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts
+# Install script for directory: /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

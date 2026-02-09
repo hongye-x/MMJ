@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/rpc"
+	"sig_vfy/src/base"
 	"sig_vfy/src/keymanage"
 	"sig_vfy/src/whitetable"
 )
@@ -32,6 +33,13 @@ func (dm *DevMang) MInformUpdateWhiteTable(args *DevMangArgs, ret *int) error {
 	if stderr != nil {
 		*ret = stderr.Errcode
 	}
+	return nil
+}
+
+func (dm *DevMang) MRestart(args *DevMangArgs, ret *int) error {
+
+	*ret = 0
+	base.Restart()
 	return nil
 }
 
@@ -72,6 +80,7 @@ func (kop *KeyOper) MInformSetPrivKPin(args *KeyOperArgs, ret *int) error {
 		return nil
 	}
 	keymanage.AddKey2Map(keyV)
+
 	return nil
 }
 

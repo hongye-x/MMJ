@@ -60,12 +60,18 @@ func ReleasePrivateKeyAccessRight(sesh unsafe.Pointer, keyidx int) int {
 func ExportSignPublicKeyRSA(sesh unsafe.Pointer, keyidx int) (*RSArefPublicKey, int) {
 	var crpubk C.RSArefPublicKey
 	uiret := C.SDF_ExportSignPublicKey_RSA(sesh, C.uint(keyidx), &crpubk)
+	if uiret != 0 {
+		return nil, int(uiret)
+	}
 	return ConvertToRSArefPublicKeyGo(&crpubk), int(uiret)
 }
 
 func ExportEncPublicKeyRSA(sesh unsafe.Pointer, keyidx int) (*RSArefPublicKey, int) {
 	var crpubk C.RSArefPublicKey
 	uiret := C.SDF_ExportEncPublicKey_RSA(sesh, C.uint(keyidx), &crpubk)
+	if uiret != 0 {
+		return nil, int(uiret)
+	}
 	return ConvertToRSArefPublicKeyGo(&crpubk), int(uiret)
 }
 
@@ -74,6 +80,9 @@ func GenerateKeyPairRSA(sesh unsafe.Pointer, keybits int) (
 	var crpubk C.RSArefPublicKey
 	var cprivk C.RSArefPrivateKey
 	uiret := C.SDF_GenerateKeyPair_RSA(sesh, C.uint(keybits), &crpubk, &cprivk)
+	if uiret != 0 {
+		return nil, nil, int(uiret)
+	}
 	return ConvertToRSArefPublicKeyGo(&crpubk),
 		ConvertToRSArefPrivateKeyGo(&cprivk), int(uiret)
 }
@@ -218,12 +227,14 @@ func HashInit(sesh unsafe.Pointer, algid int,
 			ConvertToECCrefPublicKeyC(ecpubk),
 			(*C.uchar)(unsafe.Pointer(&id[0])), C.uint(len(id)))
 	}
+
 	return int(iret)
 }
 
 func HashUpdate(sesh unsafe.Pointer, data []byte) int {
-	return int(C.SDF_HashUpdate(sesh,
+	ret := int(C.SDF_HashUpdate(sesh,
 		(*C.uchar)(unsafe.Pointer(&data[0])), C.uint(len(data))))
+	return ret
 }
 
 func HashFinal(sesh unsafe.Pointer) ([]byte, int) {

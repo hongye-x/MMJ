@@ -11,13 +11,13 @@ import (
 )
 
 // 连接管理服务失败
-const CON2MS int = 0x00002001
+const CON2MS int = 0x000F2001
 
 // 消息发送失败
-const SEND2MS int = 0x00002002
+const SEND2MS int = 0x000F2002
 
 // 消息接收失败
-const RECVFROMMS int = 0x00002003
+const RECVFROMMS int = 0x000F2003
 
 const SYM_TYPE_FLAG int = 0
 
@@ -121,7 +121,8 @@ func init() {
 }
 
 // 0:sig	1:enc
-func Manage_GenKey(user_type int, user_name_or_uuid []byte, keytype int, keyidx int, sigORenc int, keybits int, pswd []byte) int {
+func Manage_GenKey(user_type int, user_name_or_uuid []byte,
+	keytype int, keyidx int, sigORenc int, keybits int, pswd []byte) int {
 	var msgLen = 44 + 4 + 4 + 4 + len(pswd)
 	var cmd = 0xB001
 	var msg = make([]byte, msgLen)

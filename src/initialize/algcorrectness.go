@@ -83,8 +83,10 @@ func sm1Correctness(sesh unsafe.Pointer) *b.StdErr {
 	var mac = []byte{
 		0xf8, 0xfc, 0x7a, 0xf0, 0x5e, 0x7c, 0x6d, 0xfb,
 		0x5f, 0x81, 0x09, 0x0f, 0x0d, 0x87, 0x91, 0xb2}
+
 	keyh, err := ISDF.ImportKey(sesh, data_key)
 	if err != 0 {
+		fmt.Printf("ImportKey err %08X", err)
 		return b.CreateStdErr(b.ALG_SELF_TEST_ERROR,
 			"Correctness_SM1 SDF Func Error")
 	}
@@ -94,6 +96,8 @@ func sm1Correctness(sesh unsafe.Pointer) *b.StdErr {
 	outbuf1, err := ISDF.Encrypt(sesh, keyh,
 		int(ISDF.SGD_SM1_ECB), nil, data1)
 	if err != 0 {
+		fmt.Printf("err : %08X\n", err)
+
 		return b.CreateStdErr(int(err),
 			"Correctness_SM1 SDF Func Error")
 	}
@@ -319,7 +323,7 @@ func sm4Correctness(sesh unsafe.Pointer) *b.StdErr {
 			"Correctness_SM4 Verify Error")
 	}
 
-	if CFB_OFB == 1 {
+	if CFB_OFB == 0 {
 		//cfb
 		copy(tmpiv[:], data_iv)
 		outbuf3, err := ISDF.Encrypt(sesh, keyh,
@@ -495,8 +499,9 @@ func sm2EncSigCorrectness(sesh unsafe.Pointer) *b.StdErr {
 	copy(ecsig.S[32:], cs_chk[:])
 
 	// enc
+	var algtype = ISDF.SGD_SM2_3
 	chkmsg, ret := ISDF.ExternalDecryptECC(
-		sesh, ISDF.SGD_SM2, &privk, &eccip)
+		sesh, algtype, &privk, &eccip)
 	if ret != 0 {
 		return b.CreateStdErr(int(ret),
 			"Correctness_SM2 Sig/Enc SDF Func Error")
@@ -506,13 +511,13 @@ func sm2EncSigCorrectness(sesh unsafe.Pointer) *b.StdErr {
 			"Correctness_SM2 Sig/Enc Verify Error")
 	}
 	eccip2, ret := ISDF.ExternalEncryptECC(
-		sesh, ISDF.SGD_SM2, &pubk, orgmsg[:])
+		sesh, algtype, &pubk, orgmsg[:])
 	if ret != 0 {
 		return b.CreateStdErr(int(ret),
 			"Correctness_SM2 Sig/Enc SDF Func Error")
 	}
 	chkmsg2, ret := ISDF.ExternalDecryptECC(
-		sesh, ISDF.SGD_SM2, &privk, eccip2)
+		sesh, algtype, &privk, eccip2)
 	if ret != 0 {
 		return b.CreateStdErr(int(ret),
 			"Correctness_SM2 Sig/Enc SDF Func Error")
@@ -523,22 +528,23 @@ func sm2EncSigCorrectness(sesh unsafe.Pointer) *b.StdErr {
 	}
 
 	// sig
+	algtype = ISDF.SGD_SM2_1
 	ret = ISDF.ExternalVerifyECC(
-		sesh, ISDF.SGD_SM2, &pubk, orgmsg[:32], &ecsig)
+		sesh, algtype, &pubk, orgmsg[:32], &ecsig)
 	if ret != 0 {
 		return b.CreateStdErr(int(ret),
 			"Correctness_SM2 Sig/Enc Verify Error")
 	}
 
 	ecsig2, ret := ISDF.ExternalSignECC(
-		sesh, ISDF.SGD_SM2, &privk, orgmsg[:32])
+		sesh, algtype, &privk, orgmsg[:32])
 	if ret != 0 {
 		return b.CreateStdErr(int(ret),
 			"Correctness_SM2 Sig/Enc SDF Func Error")
 	}
 
 	ret = ISDF.ExternalVerifyECC(
-		sesh, ISDF.SGD_SM2, &pubk, orgmsg[:32], ecsig2)
+		sesh, algtype, &pubk, orgmsg[:32], ecsig2)
 	if ret != 0 {
 		return b.CreateStdErr(b.ALG_SELF_TEST_ERROR,
 			"Correctness_SM2 Sig/Enc Verify Error")
@@ -547,7 +553,6 @@ func sm2EncSigCorrectness(sesh unsafe.Pointer) *b.StdErr {
 }
 
 func sm3Correctness(sesh unsafe.Pointer) *b.StdErr {
-
 	var data = []byte("abc")
 	ret := ISDF.HashInit(sesh, ISDF.SGD_SM3, nil, nil)
 	if ret != 0 {

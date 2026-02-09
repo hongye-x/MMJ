@@ -133,6 +133,23 @@ extern "C"
 		void* hSessionHandle, 
 		unsigned int uiKeyNumber);
 
+	/*------------------------- spii -------------------------*/ 
+	int SPII_GenerateKEK(
+    	void *hSessionHandle,
+    	unsigned int uiKeyIndex,
+    	unsigned int byteslen);
+
+	int SPII_DeleteKEK (
+    	void *hSessionHandle,
+    	unsigned int uiKeyIndex);
+
+	int SPII_LoadinWithPassword(
+		void *hSessionHandle,
+		unsigned char *pswd,
+		unsigned int pswdlenth,
+		unsigned int role);
+
+
 #define SDF_ExportKeyWithEPK_ECC EVDF_ExportKeyWithEPK_ECC
 #define SDF_ImportKeyWithSessionKey EVDF_ImportKeyWithSessionKey
 #define SDF_SetKey EVDF_SetKey

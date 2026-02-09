@@ -1,5 +1,5 @@
 nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o: \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/frequency.c \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/frequency.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -33,7 +33,7 @@ nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/externs.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/defs.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/config.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/erf.h
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/externs.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/defs.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/config.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/erf.h

@@ -1,7 +1,7 @@
 nist_sts/CMakeFiles/nist_sts.dir/erf.c.o: \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/erf.c \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/erf.c \
  /usr/include/stdc-predef.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/erf.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/erf.h \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

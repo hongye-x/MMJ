@@ -63,7 +63,7 @@ func genusers() int {
 		exec.Command("sh", "-c", "stty echo < /dev/tty").Run()
 
 		stderr := msAPI.Manage_CreateUser(currentUserType, currentUserNameOrUUID,
-			usertype, []byte(uuid), nil, []byte(userPin), nil)
+			usertype, nil, []byte(uuid), []byte(userPin), &pubKey)
 		if stderr != 0 {
 			return stderr
 		}
@@ -238,14 +238,14 @@ func createUserMenu() {
 	copy(pubKey.X[:], pubk[:64])
 	copy(pubKey.Y[:], pubk[64:])
 
-	fmt.Printf("请输入用户PIN码:")
 	exec.Command("sh", "-c", "stty -echo < /dev/tty").Run()
 	var userPin string
+	fmt.Println("请输入用户%s PIN码:", userUUID)
 	fmt.Scanln(&userPin)
 	exec.Command("sh", "-c", "stty echo < /dev/tty").Run()
 
 	iret := msAPI.Manage_CreateUser(currentUserType, currentUserNameOrUUID,
-		userType, []byte(userUUID), nil, []byte(userPin), &pubKey)
+		userType, nil, []byte(userUUID), []byte(userPin), &pubKey)
 	if iret != 0 {
 		fmt.Printf("创建用户失败 错误码 : %08X\n", iret)
 	} else {
@@ -794,7 +794,6 @@ func otherfunction() {
 	var pivKey ISDF.ECCrefPrivateKey
 	pivKey.Bits = 256
 	copy(pivKey.K[:], pivk[:n])
-
 	ecsig, iret := ISDF.ExternalSignECC(sesh, ISDF.SGD_SM2, &pivKey, rDigest)
 	if iret != 0 {
 		fmt.Printf("\nUkey 签名失败!\n")
@@ -806,7 +805,7 @@ func otherfunction() {
 	var usertype int
 	var usertypeList = []string{"管理员", "操作员", "审计员"}
 	iret = msAPI.Manage_VerifyUser(currentUserType, currentUserNameOrUUID,
-		[]byte(userUUID), nil, []byte(userPin), r, becsig, &usertype)
+		nil, []byte(userUUID), []byte(userPin), r, becsig, &usertype)
 	if iret != 0 {
 		fmt.Printf("\n用户验证失败 错误码 : %08X\n\n", iret)
 		return

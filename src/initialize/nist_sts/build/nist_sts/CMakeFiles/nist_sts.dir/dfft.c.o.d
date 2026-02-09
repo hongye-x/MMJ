@@ -1,5 +1,5 @@
 nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o: \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/dfft.c \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/dfft.c \
  /usr/include/stdc-predef.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

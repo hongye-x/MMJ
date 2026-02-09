@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/sig_vfy/src/initialize/nist_sts
+CMAKE_SOURCE_DIR = /root/selfPro/MMJ/src/initialize/nist_sts
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/sig_vfy/src/initialize/nist_sts/build
+CMAKE_BINARY_DIR = /root/selfPro/MMJ/src/initialize/nist_sts/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles /root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts//CMakeFiles/progress.marks
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/sig_vfy/src/initialize/nist_sts/build/CMakeFiles 0
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles /root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts//CMakeFiles/progress.marks
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/selfPro/MMJ/src/initialize/nist_sts/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/clean
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/preinstall
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/preinstall
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 nist_sts/CMakeFiles/nist_sts.dir/rule:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/CMakeFiles/nist_sts.dir/rule
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nist_sts/CMakeFiles/nist_sts.dir/rule
 .PHONY : nist_sts/CMakeFiles/nist_sts.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ nist_sts: nist_sts/CMakeFiles/nist_sts.dir/rule
 
 # fast build rule for target.
 nist_sts/fast:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/build
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/build
 .PHONY : nist_sts/fast
 
 approximateEntropy.o: approximateEntropy.c.o
@@ -135,7 +135,7 @@ approximateEntropy.o: approximateEntropy.c.o
 
 # target to build an object file
 approximateEntropy.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.o
 .PHONY : approximateEntropy.c.o
 
 approximateEntropy.i: approximateEntropy.c.i
@@ -143,7 +143,7 @@ approximateEntropy.i: approximateEntropy.c.i
 
 # target to preprocess a source file
 approximateEntropy.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.i
 .PHONY : approximateEntropy.c.i
 
 approximateEntropy.s: approximateEntropy.c.s
@@ -151,7 +151,7 @@ approximateEntropy.s: approximateEntropy.c.s
 
 # target to generate assembly for a file
 approximateEntropy.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/approximateEntropy.c.s
 .PHONY : approximateEntropy.c.s
 
 binaryDerivate.o: binaryDerivate.c.o
@@ -159,7 +159,7 @@ binaryDerivate.o: binaryDerivate.c.o
 
 # target to build an object file
 binaryDerivate.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.o
 .PHONY : binaryDerivate.c.o
 
 binaryDerivate.i: binaryDerivate.c.i
@@ -167,7 +167,7 @@ binaryDerivate.i: binaryDerivate.c.i
 
 # target to preprocess a source file
 binaryDerivate.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.i
 .PHONY : binaryDerivate.c.i
 
 binaryDerivate.s: binaryDerivate.c.s
@@ -175,7 +175,7 @@ binaryDerivate.s: binaryDerivate.c.s
 
 # target to generate assembly for a file
 binaryDerivate.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/binaryDerivate.c.s
 .PHONY : binaryDerivate.c.s
 
 blockFrequency.o: blockFrequency.c.o
@@ -183,7 +183,7 @@ blockFrequency.o: blockFrequency.c.o
 
 # target to build an object file
 blockFrequency.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.o
 .PHONY : blockFrequency.c.o
 
 blockFrequency.i: blockFrequency.c.i
@@ -191,7 +191,7 @@ blockFrequency.i: blockFrequency.c.i
 
 # target to preprocess a source file
 blockFrequency.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.i
 .PHONY : blockFrequency.c.i
 
 blockFrequency.s: blockFrequency.c.s
@@ -199,7 +199,7 @@ blockFrequency.s: blockFrequency.c.s
 
 # target to generate assembly for a file
 blockFrequency.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/blockFrequency.c.s
 .PHONY : blockFrequency.c.s
 
 bytesToBitSequence.o: bytesToBitSequence.c.o
@@ -207,7 +207,7 @@ bytesToBitSequence.o: bytesToBitSequence.c.o
 
 # target to build an object file
 bytesToBitSequence.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.o
 .PHONY : bytesToBitSequence.c.o
 
 bytesToBitSequence.i: bytesToBitSequence.c.i
@@ -215,7 +215,7 @@ bytesToBitSequence.i: bytesToBitSequence.c.i
 
 # target to preprocess a source file
 bytesToBitSequence.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.i
 .PHONY : bytesToBitSequence.c.i
 
 bytesToBitSequence.s: bytesToBitSequence.c.s
@@ -223,7 +223,7 @@ bytesToBitSequence.s: bytesToBitSequence.c.s
 
 # target to generate assembly for a file
 bytesToBitSequence.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/bytesToBitSequence.c.s
 .PHONY : bytesToBitSequence.c.s
 
 cephes.o: cephes.c.o
@@ -231,7 +231,7 @@ cephes.o: cephes.c.o
 
 # target to build an object file
 cephes.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cephes.c.o
 .PHONY : cephes.c.o
 
 cephes.i: cephes.c.i
@@ -239,7 +239,7 @@ cephes.i: cephes.c.i
 
 # target to preprocess a source file
 cephes.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cephes.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cephes.c.i
 .PHONY : cephes.c.i
 
 cephes.s: cephes.c.s
@@ -247,7 +247,7 @@ cephes.s: cephes.c.s
 
 # target to generate assembly for a file
 cephes.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cephes.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cephes.c.s
 .PHONY : cephes.c.s
 
 cusum.o: cusum.c.o
@@ -255,7 +255,7 @@ cusum.o: cusum.c.o
 
 # target to build an object file
 cusum.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cusum.c.o
 .PHONY : cusum.c.o
 
 cusum.i: cusum.c.i
@@ -263,7 +263,7 @@ cusum.i: cusum.c.i
 
 # target to preprocess a source file
 cusum.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cusum.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cusum.c.i
 .PHONY : cusum.c.i
 
 cusum.s: cusum.c.s
@@ -271,7 +271,7 @@ cusum.s: cusum.c.s
 
 # target to generate assembly for a file
 cusum.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cusum.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/cusum.c.s
 .PHONY : cusum.c.s
 
 dfft.o: dfft.c.o
@@ -279,7 +279,7 @@ dfft.o: dfft.c.o
 
 # target to build an object file
 dfft.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/dfft.c.o
 .PHONY : dfft.c.o
 
 dfft.i: dfft.c.i
@@ -287,7 +287,7 @@ dfft.i: dfft.c.i
 
 # target to preprocess a source file
 dfft.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/dfft.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/dfft.c.i
 .PHONY : dfft.c.i
 
 dfft.s: dfft.c.s
@@ -295,7 +295,7 @@ dfft.s: dfft.c.s
 
 # target to generate assembly for a file
 dfft.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/dfft.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/dfft.c.s
 .PHONY : dfft.c.s
 
 discreteFourierTransform.o: discreteFourierTransform.c.o
@@ -303,7 +303,7 @@ discreteFourierTransform.o: discreteFourierTransform.c.o
 
 # target to build an object file
 discreteFourierTransform.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.o
 .PHONY : discreteFourierTransform.c.o
 
 discreteFourierTransform.i: discreteFourierTransform.c.i
@@ -311,7 +311,7 @@ discreteFourierTransform.i: discreteFourierTransform.c.i
 
 # target to preprocess a source file
 discreteFourierTransform.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.i
 .PHONY : discreteFourierTransform.c.i
 
 discreteFourierTransform.s: discreteFourierTransform.c.s
@@ -319,7 +319,7 @@ discreteFourierTransform.s: discreteFourierTransform.c.s
 
 # target to generate assembly for a file
 discreteFourierTransform.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/discreteFourierTransform.c.s
 .PHONY : discreteFourierTransform.c.s
 
 erf.o: erf.c.o
@@ -327,7 +327,7 @@ erf.o: erf.c.o
 
 # target to build an object file
 erf.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/erf.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/erf.c.o
 .PHONY : erf.c.o
 
 erf.i: erf.c.i
@@ -335,7 +335,7 @@ erf.i: erf.c.i
 
 # target to preprocess a source file
 erf.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/erf.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/erf.c.i
 .PHONY : erf.c.i
 
 erf.s: erf.c.s
@@ -343,7 +343,7 @@ erf.s: erf.c.s
 
 # target to generate assembly for a file
 erf.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/erf.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/erf.c.s
 .PHONY : erf.c.s
 
 frequency.o: frequency.c.o
@@ -351,7 +351,7 @@ frequency.o: frequency.c.o
 
 # target to build an object file
 frequency.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/frequency.c.o
 .PHONY : frequency.c.o
 
 frequency.i: frequency.c.i
@@ -359,7 +359,7 @@ frequency.i: frequency.c.i
 
 # target to preprocess a source file
 frequency.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/frequency.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/frequency.c.i
 .PHONY : frequency.c.i
 
 frequency.s: frequency.c.s
@@ -367,7 +367,7 @@ frequency.s: frequency.c.s
 
 # target to generate assembly for a file
 frequency.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/frequency.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/frequency.c.s
 .PHONY : frequency.c.s
 
 genutils.o: genutils.c.o
@@ -375,7 +375,7 @@ genutils.o: genutils.c.o
 
 # target to build an object file
 genutils.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/genutils.c.o
 .PHONY : genutils.c.o
 
 genutils.i: genutils.c.i
@@ -383,7 +383,7 @@ genutils.i: genutils.c.i
 
 # target to preprocess a source file
 genutils.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/genutils.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/genutils.c.i
 .PHONY : genutils.c.i
 
 genutils.s: genutils.c.s
@@ -391,7 +391,7 @@ genutils.s: genutils.c.s
 
 # target to generate assembly for a file
 genutils.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/genutils.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/genutils.c.s
 .PHONY : genutils.c.s
 
 linearComplexity.o: linearComplexity.c.o
@@ -399,7 +399,7 @@ linearComplexity.o: linearComplexity.c.o
 
 # target to build an object file
 linearComplexity.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.o
 .PHONY : linearComplexity.c.o
 
 linearComplexity.i: linearComplexity.c.i
@@ -407,7 +407,7 @@ linearComplexity.i: linearComplexity.c.i
 
 # target to preprocess a source file
 linearComplexity.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.i
 .PHONY : linearComplexity.c.i
 
 linearComplexity.s: linearComplexity.c.s
@@ -415,7 +415,7 @@ linearComplexity.s: linearComplexity.c.s
 
 # target to generate assembly for a file
 linearComplexity.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/linearComplexity.c.s
 .PHONY : linearComplexity.c.s
 
 longestRunOfOnes.o: longestRunOfOnes.c.o
@@ -423,7 +423,7 @@ longestRunOfOnes.o: longestRunOfOnes.c.o
 
 # target to build an object file
 longestRunOfOnes.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.o
 .PHONY : longestRunOfOnes.c.o
 
 longestRunOfOnes.i: longestRunOfOnes.c.i
@@ -431,7 +431,7 @@ longestRunOfOnes.i: longestRunOfOnes.c.i
 
 # target to preprocess a source file
 longestRunOfOnes.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.i
 .PHONY : longestRunOfOnes.c.i
 
 longestRunOfOnes.s: longestRunOfOnes.c.s
@@ -439,7 +439,7 @@ longestRunOfOnes.s: longestRunOfOnes.c.s
 
 # target to generate assembly for a file
 longestRunOfOnes.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/longestRunOfOnes.c.s
 .PHONY : longestRunOfOnes.c.s
 
 matrix.o: matrix.c.o
@@ -447,7 +447,7 @@ matrix.o: matrix.c.o
 
 # target to build an object file
 matrix.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/matrix.c.o
 .PHONY : matrix.c.o
 
 matrix.i: matrix.c.i
@@ -455,7 +455,7 @@ matrix.i: matrix.c.i
 
 # target to preprocess a source file
 matrix.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/matrix.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/matrix.c.i
 .PHONY : matrix.c.i
 
 matrix.s: matrix.c.s
@@ -463,7 +463,7 @@ matrix.s: matrix.c.s
 
 # target to generate assembly for a file
 matrix.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/matrix.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/matrix.c.s
 .PHONY : matrix.c.s
 
 nonOverlappingTemplateMatchings.o: nonOverlappingTemplateMatchings.c.o
@@ -471,7 +471,7 @@ nonOverlappingTemplateMatchings.o: nonOverlappingTemplateMatchings.c.o
 
 # target to build an object file
 nonOverlappingTemplateMatchings.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.o
 .PHONY : nonOverlappingTemplateMatchings.c.o
 
 nonOverlappingTemplateMatchings.i: nonOverlappingTemplateMatchings.c.i
@@ -479,7 +479,7 @@ nonOverlappingTemplateMatchings.i: nonOverlappingTemplateMatchings.c.i
 
 # target to preprocess a source file
 nonOverlappingTemplateMatchings.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.i
 .PHONY : nonOverlappingTemplateMatchings.c.i
 
 nonOverlappingTemplateMatchings.s: nonOverlappingTemplateMatchings.c.s
@@ -487,7 +487,7 @@ nonOverlappingTemplateMatchings.s: nonOverlappingTemplateMatchings.c.s
 
 # target to generate assembly for a file
 nonOverlappingTemplateMatchings.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/nonOverlappingTemplateMatchings.c.s
 .PHONY : nonOverlappingTemplateMatchings.c.s
 
 overlappingTemplateMatchings.o: overlappingTemplateMatchings.c.o
@@ -495,7 +495,7 @@ overlappingTemplateMatchings.o: overlappingTemplateMatchings.c.o
 
 # target to build an object file
 overlappingTemplateMatchings.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.o
 .PHONY : overlappingTemplateMatchings.c.o
 
 overlappingTemplateMatchings.i: overlappingTemplateMatchings.c.i
@@ -503,7 +503,7 @@ overlappingTemplateMatchings.i: overlappingTemplateMatchings.c.i
 
 # target to preprocess a source file
 overlappingTemplateMatchings.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.i
 .PHONY : overlappingTemplateMatchings.c.i
 
 overlappingTemplateMatchings.s: overlappingTemplateMatchings.c.s
@@ -511,7 +511,7 @@ overlappingTemplateMatchings.s: overlappingTemplateMatchings.c.s
 
 # target to generate assembly for a file
 overlappingTemplateMatchings.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/overlappingTemplateMatchings.c.s
 .PHONY : overlappingTemplateMatchings.c.s
 
 pokerDetect.o: pokerDetect.c.o
@@ -519,7 +519,7 @@ pokerDetect.o: pokerDetect.c.o
 
 # target to build an object file
 pokerDetect.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o
 .PHONY : pokerDetect.c.o
 
 pokerDetect.i: pokerDetect.c.i
@@ -527,7 +527,7 @@ pokerDetect.i: pokerDetect.c.i
 
 # target to preprocess a source file
 pokerDetect.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.i
 .PHONY : pokerDetect.c.i
 
 pokerDetect.s: pokerDetect.c.s
@@ -535,7 +535,7 @@ pokerDetect.s: pokerDetect.c.s
 
 # target to generate assembly for a file
 pokerDetect.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.s
 .PHONY : pokerDetect.c.s
 
 randomExcursions.o: randomExcursions.c.o
@@ -543,7 +543,7 @@ randomExcursions.o: randomExcursions.c.o
 
 # target to build an object file
 randomExcursions.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.o
 .PHONY : randomExcursions.c.o
 
 randomExcursions.i: randomExcursions.c.i
@@ -551,7 +551,7 @@ randomExcursions.i: randomExcursions.c.i
 
 # target to preprocess a source file
 randomExcursions.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.i
 .PHONY : randomExcursions.c.i
 
 randomExcursions.s: randomExcursions.c.s
@@ -559,7 +559,7 @@ randomExcursions.s: randomExcursions.c.s
 
 # target to generate assembly for a file
 randomExcursions.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursions.c.s
 .PHONY : randomExcursions.c.s
 
 randomExcursionsVariant.o: randomExcursionsVariant.c.o
@@ -567,7 +567,7 @@ randomExcursionsVariant.o: randomExcursionsVariant.c.o
 
 # target to build an object file
 randomExcursionsVariant.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.o
 .PHONY : randomExcursionsVariant.c.o
 
 randomExcursionsVariant.i: randomExcursionsVariant.c.i
@@ -575,7 +575,7 @@ randomExcursionsVariant.i: randomExcursionsVariant.c.i
 
 # target to preprocess a source file
 randomExcursionsVariant.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.i
 .PHONY : randomExcursionsVariant.c.i
 
 randomExcursionsVariant.s: randomExcursionsVariant.c.s
@@ -583,7 +583,7 @@ randomExcursionsVariant.s: randomExcursionsVariant.c.s
 
 # target to generate assembly for a file
 randomExcursionsVariant.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/randomExcursionsVariant.c.s
 .PHONY : randomExcursionsVariant.c.s
 
 rank.o: rank.c.o
@@ -591,7 +591,7 @@ rank.o: rank.c.o
 
 # target to build an object file
 rank.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/rank.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/rank.c.o
 .PHONY : rank.c.o
 
 rank.i: rank.c.i
@@ -599,7 +599,7 @@ rank.i: rank.c.i
 
 # target to preprocess a source file
 rank.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/rank.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/rank.c.i
 .PHONY : rank.c.i
 
 rank.s: rank.c.s
@@ -607,7 +607,7 @@ rank.s: rank.c.s
 
 # target to generate assembly for a file
 rank.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/rank.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/rank.c.s
 .PHONY : rank.c.s
 
 runs.o: runs.c.o
@@ -615,7 +615,7 @@ runs.o: runs.c.o
 
 # target to build an object file
 runs.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runs.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runs.c.o
 .PHONY : runs.c.o
 
 runs.i: runs.c.i
@@ -623,7 +623,7 @@ runs.i: runs.c.i
 
 # target to preprocess a source file
 runs.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runs.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runs.c.i
 .PHONY : runs.c.i
 
 runs.s: runs.c.s
@@ -631,7 +631,7 @@ runs.s: runs.c.s
 
 # target to generate assembly for a file
 runs.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runs.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runs.c.s
 .PHONY : runs.c.s
 
 runsDistribution.o: runsDistribution.c.o
@@ -639,7 +639,7 @@ runsDistribution.o: runsDistribution.c.o
 
 # target to build an object file
 runsDistribution.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.o
 .PHONY : runsDistribution.c.o
 
 runsDistribution.i: runsDistribution.c.i
@@ -647,7 +647,7 @@ runsDistribution.i: runsDistribution.c.i
 
 # target to preprocess a source file
 runsDistribution.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.i
 .PHONY : runsDistribution.c.i
 
 runsDistribution.s: runsDistribution.c.s
@@ -655,7 +655,7 @@ runsDistribution.s: runsDistribution.c.s
 
 # target to generate assembly for a file
 runsDistribution.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/runsDistribution.c.s
 .PHONY : runsDistribution.c.s
 
 selfCorrelation.o: selfCorrelation.c.o
@@ -663,7 +663,7 @@ selfCorrelation.o: selfCorrelation.c.o
 
 # target to build an object file
 selfCorrelation.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.o
 .PHONY : selfCorrelation.c.o
 
 selfCorrelation.i: selfCorrelation.c.i
@@ -671,7 +671,7 @@ selfCorrelation.i: selfCorrelation.c.i
 
 # target to preprocess a source file
 selfCorrelation.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.i
 .PHONY : selfCorrelation.c.i
 
 selfCorrelation.s: selfCorrelation.c.s
@@ -679,7 +679,7 @@ selfCorrelation.s: selfCorrelation.c.s
 
 # target to generate assembly for a file
 selfCorrelation.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/selfCorrelation.c.s
 .PHONY : selfCorrelation.c.s
 
 serial.o: serial.c.o
@@ -687,7 +687,7 @@ serial.o: serial.c.o
 
 # target to build an object file
 serial.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/serial.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/serial.c.o
 .PHONY : serial.c.o
 
 serial.i: serial.c.i
@@ -695,7 +695,7 @@ serial.i: serial.c.i
 
 # target to preprocess a source file
 serial.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/serial.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/serial.c.i
 .PHONY : serial.c.i
 
 serial.s: serial.c.s
@@ -703,7 +703,7 @@ serial.s: serial.c.s
 
 # target to generate assembly for a file
 serial.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/serial.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/serial.c.s
 .PHONY : serial.c.s
 
 universal.o: universal.c.o
@@ -711,7 +711,7 @@ universal.o: universal.c.o
 
 # target to build an object file
 universal.c.o:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/universal.c.o
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/universal.c.o
 .PHONY : universal.c.o
 
 universal.i: universal.c.i
@@ -719,7 +719,7 @@ universal.i: universal.c.i
 
 # target to preprocess a source file
 universal.c.i:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/universal.c.i
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/universal.c.i
 .PHONY : universal.c.i
 
 universal.s: universal.c.s
@@ -727,7 +727,7 @@ universal.s: universal.c.s
 
 # target to generate assembly for a file
 universal.c.s:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/universal.c.s
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(MAKE) $(MAKESILENT) -f nist_sts/CMakeFiles/nist_sts.dir/build.make nist_sts/CMakeFiles/nist_sts.dir/universal.c.s
 .PHONY : universal.c.s
 
 # Help Target
@@ -825,6 +825,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/workspace/sig_vfy/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/selfPro/MMJ/src/initialize/nist_sts/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

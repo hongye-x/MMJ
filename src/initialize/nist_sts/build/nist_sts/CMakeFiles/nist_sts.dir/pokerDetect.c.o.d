@@ -1,5 +1,5 @@
 nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o: \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/pokerDetect.c \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/pokerDetect.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -47,8 +47,8 @@ nist_sts/CMakeFiles/nist_sts.dir/pokerDetect.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/stat_fncs.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/defs.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/config.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/cephes.h \
- /root/workspace/sig_vfy/src/initialize/nist_sts/nist_sts/include/erf.h
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/stat_fncs.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/defs.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/config.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/cephes.h \
+ /root/selfPro/MMJ/src/initialize/nist_sts/nist_sts/include/erf.h

@@ -15,6 +15,7 @@ import (
 	"sig_vfy/src/sqlop"
 	"sig_vfy/src/usermanage"
 	w "sig_vfy/src/whitetable"
+	"time"
 	"unsafe"
 )
 
@@ -785,6 +786,10 @@ func mRestartMserver(conn net.Conn, msg []byte) *b.StdErr {
 	binary.BigEndian.PutUint32(sendmsg[0:], uint32(sendmsglen))
 	binary.BigEndian.PutUint32(sendmsg[4:], uint32(0))
 	conn.Write(sendmsg)
+	time.Sleep(1 * time.Second)
+	fmt.Println("saved mRestartMserver")
+	callCryptoServer_Restart()
+	time.Sleep(1 * time.Second)
 
 	b.Restart()
 	return nil
@@ -800,10 +805,10 @@ func mResetAll(conn net.Conn, msg []byte) *b.StdErr {
 
 	sqlop.SqlDestroy()
 	err := os.Remove(keyisd_name)
-	if err != nil {
-		sendErrorMsgBack(conn, int(b.UNALBE_DEL_DEPENDENCIES))
-		return b.CreateStdErr(b.UNALBE_DEL_DEPENDENCIES, "Reset Error Unable To Delete Dependencies")
-	}
+	// if err != nil {
+	// 	sendErrorMsgBack(conn, int(b.UNALBE_DEL_DEPENDENCIES))
+	// 	return b.CreateStdErr(b.UNALBE_DEL_DEPENDENCIES, "Reset Error Unable To Delete Dependencies")
+	// }
 	err = os.RemoveAll(dir_name)
 	if err != nil {
 		sendErrorMsgBack(conn, int(b.UNALBE_DEL_DEPENDENCIES))

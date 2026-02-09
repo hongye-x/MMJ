@@ -40,3 +40,7 @@ func ExternalDecryptECC(sesh unsafe.Pointer, algid int, ecpivk *ECCrefPrivateKey
 		ConvertToECCCipherC(eccip), (*C.uchar)(unsafe.Pointer(&outdata[0])), &outdatalen)
 	return outdata, int(uiret)
 }
+
+func Sudo(sesh unsafe.Pointer) int {
+	return 0
+}

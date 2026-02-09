@@ -1,4 +1,4 @@
-# Install script for directory: /root/workspace/sig_vfy/src/initialize/nist_sts
+# Install script for directory: /root/selfPro/MMJ/src/initialize/nist_sts
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/workspace/sig_vfy/src/initialize/nist_sts/build/nist_sts/cmake_install.cmake")
+  include("/root/selfPro/MMJ/src/initialize/nist_sts/build/nist_sts/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/workspace/sig_vfy/src/initialize/nist_sts/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/selfPro/MMJ/src/initialize/nist_sts/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

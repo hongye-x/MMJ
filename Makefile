@@ -1,8 +1,8 @@
 BINDIR = ./bin
 # 依赖
 CDEPENDS = installdeps
-CRYPTO_LIB_NAME ?= softsdf
-ARCH ?=
+CRYPTO_LIB_NAME ?= piico
+ARCH ?= amd64
 
 # 加密服务
 SRCDIR1 = ./src/cserver
@@ -30,7 +30,7 @@ UPDATE_CONFIG = update_config
 # 默认加密库配置
 PROJECT_ROOT := $(shell pwd)
 CRYPTO_LIB_DIR  ?= $(PROJECT_ROOT)/src/crypto/lib
-CRYPTO_RPATH    ?= $(shell pwd)/lib
+CRYPTO_RPATH    ?= ../lib
 
 DB_TAGS=mysql
 CRYPTO_HARDWARE=$(CRYPTO_LIB_NAME)
@@ -136,6 +136,9 @@ ifeq ($(CRYPTO_LIB_NAME),softsdf)
 else ifeq ($(CRYPTO_LIB_NAME),swsds)
 	@echo "Setting PROKEY_ENCTYPE to ECB"
 	@sed -i 's/^\([[:space:]]*PROKEY_ENCTYPE[[:space:]]*=[[:space:]]*\).*/\1ECB/' $(BINDIR)/config.conf
+else ifeq ($(CRYPTO_LIB_NAME),piico)
+	@echo "Setting PROKEY_ENCTYPE to ECB"
+	@sed -i 's/^\([[:space:]]*PROKEY_ENCTYPE[[:space:]]*=[[:space:]]*\).*/\1ECB/' $(BINDIR)/config.conf
 else
 	@echo "Unknown CRYPTO_LIB_NAME value: $(CRYPTO_LIB_NAME)"
 	@exit 1
@@ -145,4 +148,4 @@ clean:
 	@pkill $(TARGET1);\
 	pkill $(TARGET2);\
 	pkill $(TARGET3);\
-	rm -rf $(BINDIR)/$(TARGET1) $(BINDIR)/$(TARGET2) $(BINDIR)/$(TARGET3) 
+	rm -rf $(BINDIR)/$(TARGET1) $(BINDIR)/$(TARGET2) $(BINDIR)/$(TARGET3) $(BINDIR)/$(TARGET4) $(BINDIR)/$(TARGET5) 

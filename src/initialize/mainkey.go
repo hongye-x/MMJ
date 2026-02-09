@@ -2,6 +2,7 @@ package initialize
 
 import (
 	"bytes"
+	"fmt"
 	b "sig_vfy/src/base"
 	ISDF "sig_vfy/src/crypto"
 	"unsafe"
@@ -27,7 +28,9 @@ func destoryRootKey(sesh unsafe.Pointer) *b.StdErr {
 	}
 
 	uiret = ISDF.DeleteKEKByIdx(sesh, ORGINAL_KEY_IDX)
-	if uiret != 0 && uiret != 0x01000008 {
+	if uiret != 0 &&
+		uiret != b.SDR_KEYNOTEXIST &&
+		uiret != 0x0000200F {
 		return b.CreateStdErr(int(uiret), "DestoryRootKey SDF Func Error")
 	}
 
@@ -64,11 +67,15 @@ func GenRootKey(sesh unsafe.Pointer) *b.StdErr {
 
 	uiret = ISDF.GenKEK2Idx(sesh, ORGINAL_KEY_IDX, ROOTKEY_LEN)
 	if uiret != 0 {
+		fmt.Println("GenKEK2Idx error")
+		fmt.Println("ORGINAL_KEY_IDX ", ORGINAL_KEY_IDX)
 		return b.CreateStdErr(int(uiret), "GenRootKey SDF Func Error")
 	}
 	if bytes.Equal(protype, []byte("ECB")) {
 		encProKey, proKeyh, uiret := ISDF.GenerateKeyWithKEK(sesh, ROOTKEY_LEN*8, ENCTYPE, ORGINAL_KEY_IDX)
 		if uiret != 0 {
+			fmt.Println("GenerateKeyWithKEK error")
+			fmt.Println("ORGINAL_KEY_IDX ", ORGINAL_KEY_IDX)
 			return b.CreateStdErr(int(uiret), "GenRootKey SDF Func Error")
 		}
 		defer ISDF.DestroyKey(sesh, proKeyh)
@@ -147,7 +154,9 @@ func GetRootKey(sesh unsafe.Pointer) *b.StdErr {
 			return b.CreateStdErr(int(uiret), "GetRootKey SDF Func Error")
 		}
 
-		proKeyh, uiret := ISDF.ImportKeyWithKEK(sesh, ENCTYPE, ORGINAL_KEY_IDX, encProKey)
+		// fmt.Println("encProKeyLen", len(encProKey))
+		// fmt.Println(encProKey)
+		proKeyh, uiret := ISDF.ImportKeyWithKEK(sesh, ENCTYPE, ORGINAL_KEY_IDX, bytes.TrimRight(encProKey, "\x00"))
 		if uiret != 0 {
 			return b.CreateStdErr(int(uiret), "GetRootKey SDF Func Error")
 		}
@@ -163,7 +172,7 @@ func GetRootKey(sesh unsafe.Pointer) *b.StdErr {
 			return b.CreateStdErr(int(uiret), "GetRootKey SDF Func Error")
 		}
 
-		proKeyh, uiret := ISDF.ImportKeyWithKEK(sesh, ISDF.SGD_SM4_CBC, ORGINAL_KEY_IDX, encProKey)
+		proKeyh, uiret := ISDF.ImportKeyWithKEK(sesh, ISDF.SGD_SM4_CBC, ORGINAL_KEY_IDX, bytes.TrimRight(encProKey, "\x00"))
 		if uiret != 0 {
 			return b.CreateStdErr(int(uiret), "GetRootKey SDF Func Error")
 		}

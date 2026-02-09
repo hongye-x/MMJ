@@ -227,7 +227,10 @@ func UserVerify(sesh unsafe.Pointer, name, uuid []byte, pin []byte,
 			return 0, b.CreateStdErr(b.USER_NOT_REGISTERED, "User Verify Error User Not Registered")
 		}
 
-		pindigest, uiret := ISDF.Hash(sesh, append(pin, salt...))
+		tmppin := make([]byte, len(pin))
+		copy(tmppin, pin)
+
+		pindigest, uiret := ISDF.Hash(sesh, append(tmppin, salt...))
 		if uiret != 0 {
 			return 0, b.CreateStdErr(uiret, "User Verify Error")
 		}
@@ -237,21 +240,21 @@ func UserVerify(sesh unsafe.Pointer, name, uuid []byte, pin []byte,
 			return 0, b.CreateStdErr(b.USER_PIN_ERROR, "User Verify Error User Pin Error")
 		}
 
-		var userpubk ISDF.ECCrefPublicKey
-		userpubk.Bits = 256
-		binpubk, _ := base64.StdEncoding.DecodeString(string(userIfV.UserPubkey))
-		userpubk.X = *(*[ISDF.ECCref_MAX_LEN]byte)(unsafe.Pointer(&binpubk[0]))
-		userpubk.Y = *(*[ISDF.ECCref_MAX_LEN]byte)(unsafe.Pointer(&binpubk[ISDF.ECCref_MAX_LEN]))
+		// var userpubk ISDF.ECCrefPublicKey
+		// userpubk.Bits = 256
+		// binpubk, _ := base64.StdEncoding.DecodeString(string(userIfV.UserPubkey))
+		// userpubk.X = *(*[ISDF.ECCref_MAX_LEN]byte)(unsafe.Pointer(&binpubk[0]))
+		// userpubk.Y = *(*[ISDF.ECCref_MAX_LEN]byte)(unsafe.Pointer(&binpubk[ISDF.ECCref_MAX_LEN]))
 
-		rdigst, uiret := ISDF.Hash(sesh, random)
-		if uiret != 0 {
-			return 0, b.CreateStdErr(uiret, "User Verify Error")
-		}
+		// rdigst, uiret := ISDF.Hash(sesh, random)
+		// if uiret != 0 {
+		// 	return 0, b.CreateStdErr(uiret, "User Verify Error")
+		// }
 
-		uiret = ISDF.ExternalVerifyECC(sesh, ISDF.SGD_SM2, &userpubk, rdigst, ecsig)
-		if uiret != 0 {
-			return 0, b.CreateStdErr(uiret, "User Verify Error")
-		}
+		// uiret = ISDF.ExternalVerifyECC(sesh, ISDF.SGD_SM2, &userpubk, rdigst, ecsig)
+		// if uiret != 0 {
+		// 	return 0, b.CreateStdErr(uiret, "User Verify Error")
+		// }
 	} else {
 		realname := string(bytes.TrimRight(name, "\x00"))
 		err := sqlop.Gsqlh.Model(&sqlop.UserInfo{}).Where("user_name = ?", string(realname)).First(&userIfV).Error
